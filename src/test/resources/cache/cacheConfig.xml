@@ -1,0 +1,26 @@
+<caches>
+
+	<cache name="MapReloadCacheNestTest">
+		<class name="com.yundao.core.cache.MapReloadCacheNestTest" />
+	</cache>
+
+	<cache name="MapReloadCacheTest">
+		<class name="com.yundao.core.cache.MapReloadCacheTest" />
+	</cache>
+
+	<cache name="RedisReloadCacheTest">
+		<class name="com.yundao.core.cache.RedisReloadCacheTest" />
+	</cache>
+
+	<cache name="MapDefaultCacheTest" storeType="map">
+		<timeout value="10" /><!-- 超时间隔，单位秒，-1永不超时 -->
+		<maxSize value="100" /><!-- 缓存最大数量 -->
+		<removeInterval value="60" /><!-- 删除数据的间隔，单位秒，-1永不删除 -->
+		<removeHandler value="" /><!-- 删除时的处理类 -->
+	</cache>
+
+	<cache name="RedisDefaultCacheTest" storeType="redis">
+		<timeout value="10" /><!-- 超时间隔，单位秒，-1永不超时 -->
+	</cache>
+
+</caches>
